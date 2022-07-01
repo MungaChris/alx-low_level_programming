@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print numbers of base 10 
+ * main - print numbers of base 10
  *
  * Description: using the main function
  * this program prints numbers of base 10 starting from 0

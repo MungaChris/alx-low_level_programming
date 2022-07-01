@@ -4,6 +4,7 @@
  *
  * Description; using the main function
  * this program prints alphabetical numbers in reverse order
+ * Return: 0
  */
 int main(void)
 {
