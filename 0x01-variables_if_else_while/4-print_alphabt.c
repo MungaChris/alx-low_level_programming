@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print alphabet 
+ * main - print alphabet
  *
  * Description: using the main function
  * this program prints letters of alphabet except q and e
