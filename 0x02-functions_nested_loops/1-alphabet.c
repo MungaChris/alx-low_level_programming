@@ -2,7 +2,7 @@
 /**
  * main - print alphabets in lower case
  *
- * Description: using the main function
+ * Description: using print_alphabet function
  * this program prints alphabets in lower case using a prototype 'main.c'
  * Return: 0
  */
