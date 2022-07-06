@@ -1,10 +1,10 @@
-#include "main.h"
-/**
- * main - print alphabets in lower case
+#include "main.c"
+ /*
+ * _putchar - writes the character c to stdout
+ * @c: the character to print
  *
- * Description: using print_alphabet function
- * this program prints alphabets in lower case using a prototype 'main.c'
- * Return: 0
+ * Return: on success 1
+ * On error, -1 is returned, and errno is set appropriately
  */
 void print_alphabet(void)
 {
