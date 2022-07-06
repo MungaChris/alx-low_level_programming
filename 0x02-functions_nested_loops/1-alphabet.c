@@ -4,7 +4,7 @@
  * Description: program to print alphabet in lower case
  *Return: 0
  */
- void print_alphabet(void);
+ void print_alphabet(void)
 {
 	char letter;
 
