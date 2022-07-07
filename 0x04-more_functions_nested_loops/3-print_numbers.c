@@ -10,10 +10,10 @@ void print_numbers(void)
 {
 	int n;
 
-	for (n = '0'; n <= 9; n++)
+	for (n = 0; n <= 9; n++)
 	{
-		_putchar("%d, n");
-		_putchar('\n');
+		_putchar((num % 10) + '0');
 	}
-	return (0);
+	
+	_putchar('\n');
 }
