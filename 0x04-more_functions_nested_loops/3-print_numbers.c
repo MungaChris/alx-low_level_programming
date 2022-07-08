@@ -7,7 +7,7 @@ void print_numbers(void)
 	int n;
 
 	for (n = 0; n < 10; n++)
-		_fputchar(n + '0');
+		_putchar(n + '0');
 	
-	_fputchar('\n');
+	_putchar('\n');
 }
