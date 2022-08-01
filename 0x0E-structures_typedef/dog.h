@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#define DOG_H
+#ifndef DOG_H
 /*
  * struct dog - creates a struct for dogs holding their name,
  *		age and owner name
@@ -7,12 +7,14 @@
  * @age: dog's age in float
  * @owner: name of the owner
  *
- * Descriotion: this struct will show the name of the dog,
+ * Description: this struct will show the name of the dog,
  *		its age and its owner's name
  */
 struct dog
 {
-	char name[25];
+	char name;
 	float age;
-	char owner[25];
+	char owner;
 };
+
+#endif
