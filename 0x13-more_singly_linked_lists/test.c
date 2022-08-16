@@ -3,6 +3,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+typedef struct listint_s
+{
+    int n;
+    struct listint_s *next;
+} listint_t;
 /**
 //0-Print list
 // check README.md for more info
@@ -41,8 +46,8 @@ int main(void)
 }
 */
 
-//3. Add node at the end of a list
-
+/*
+// 3. Add node at the end of a list
 /** 
  * add_nodeint_end - Adds a new node at the end
  *                      of a listint_t list.
@@ -52,7 +57,7 @@ int main(void)
  * @n: The integer for the new code to contain 
  * @return: If the function fails - NULL
  *          Otherwise - the address of the new element. 
- */
+ 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
     listint_t *new, *last;
@@ -77,8 +82,43 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
     return(head);
 }
-
 //Test code (main function):
+int main(void)
+{
+    listint_t *head;
+
+    head = NULL;
+    add_nodeint_end(&head, 0);
+    add_nodeint_end(&head, 1);
+    add_nodeint_end(&head, 2);
+    add_nodeint_end(&head, 3);
+    add_nodeint_end(&head, 4);
+    add_nodeint_end(&head, 98);
+    add_nodeint_end(&head, 402);
+    add_nodeint_end(&head, 1024);
+    print_listint(head);
+    return (0);
+}
+*/
+
+//4 - Free listint_t list
+
+/**
+ * free_listint - Frees a listint_t list.
+ * 
+ * @head: A pointer to the head of the listint_t to be freed. 
+ */
+void free_listint(listint_t *head)
+{
+    listint_t *tmp;
+
+    while (head)
+    {
+        tmp = head->next;
+        free(head);
+        head = tmp;
+    }
+}
 
 int main(void)
 {
@@ -94,5 +134,7 @@ int main(void)
     add_nodeint_end(&head, 402);
     add_nodeint_end(&head, 1024);
     print_listint(head);
+    free_listint(head);
+    head = NULL;
     return (0);
 }
