@@ -1,7 +1,6 @@
 #include "lists.h"
 
 /**
- * @brief Get the nodeint at index object
  * get_nodeint_at_index - Locates a given node of
  *                      a linked listint_t list.
  * @head: A pointer to the head of the listint_t list.
